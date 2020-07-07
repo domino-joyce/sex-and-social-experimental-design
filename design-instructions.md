@@ -13,4 +13,22 @@ We will then allow 100 female birds a free choice to mate with the males, and we
 image: Liza Gross https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0040270
 
 
+First, lets check that the diet supplement did indeed have an affect on beak brightness. Assume we can measure beak brightness using a spectrophotometer to measure the wavelength of light reflected. Orange/red beaks reflect longer wavelength light.
 
+Beak brightness is measured in nm and the mean is about 550 nm, I expect this measurement to have a normal distribution because it is continuous.
+
+'''
+#50 males in normal diet treatment, mean beak wavelength is 550 nm, and the standard deviation is 10 so the points are spread quite far from the mean.
+  normal_diet<-rnorm(n=50, mean=550, sd=10)
+  normal_diet
+
+  special_diet<-rnorm(n=50, mean=560, sd=10)
+  special_diet
+'''
+Lets visualise those two data sets we have created by plotting histograms side by side in a panel
+
+'''
+mfrow=c(1, 2)
+hist(normal_diet)
+hist(special_diet)
+'''
