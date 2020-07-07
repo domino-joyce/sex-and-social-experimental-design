@@ -27,17 +27,17 @@ Beak brightness is measured in nm and the mean is about 550 nm, I expect this me
 ```
 Lets visualise those two data sets we have created by plotting histograms
 
+
 ```
+par(mfrow=c(2,1))
 hist(normal_diet)
 hist(special_diet)
-
 ```
 Next we want to turn the variables we have generated for each of the treatments into a dataframe, labelled with the treatment group each male was from.
 
 ```
 dat<-data.frame(brightness = c(normal_diet, special_diet), treatment=rep(c('normal','special'), each=50))
 dat #just shows you the data to make sure it looks as you are expecting
-
 ```
 These are normally distributed data, and we now want to test whether there is a difference in mean brightness between the treatments.
 
@@ -51,5 +51,35 @@ boxplot(dat$brightness ~ dat$treatment)
 ```
 When you are producing your own script, make sure you annotate each line of code, and paste in your outputs so that you can explain how you will interpret your results.
 
+OK, so now we know that the two treatments have different beak brightness, we will see if the number of offspring that each male has is significantly different in the brighter beak group. We predict that there will be a difference, so lets generate data assuming we're right. 
 
+What kind of data will we get? Mean number of offspring per male is probably about 3, so lets say 3 for the normal group but 4 for the bright group. These data are not measurements, they are counts, so they are unlikely to be normally distributed. We need poisson distributed data.
 
+```
+par(mfrow=c(2,1))                   #creates a window with two spaces for plots one above the other
+special <- rpois(n=50, lambda=5)    #creates data following a poisson distribution for 50 birds, with a medium skew
+hist(special, xlim=c(0, 10))        #shows the data in a histogram
+abline(v=4, lwd=3, col='red')       #puts a vertical red line at the mean value (4)
+normal <-rpois(n=50, lambda=3)      #creates data following a poisson distribution for 50 birds, with a lesser skew
+hist(normal, xlim=c(0, 10))         #shows the data in a histogram
+abline(v=3, lwd=3, col='red')       #puts a vertical red line at the mean value (3)
+```
+We now want to make these values into a dataframe:
+
+```
+dat2<-data.frame(offspring=c(special, normal), diet=rep(c('special','normal'), each=50))
+dat2
+tapply(dat2$offspring, dat2$diet, mean) #shows a summary table of the data
+```
+A summary figure which would display the results would be useful
+```
+with(dat2, boxplot(offspring ~ diet))
+```
+and of course you would add code which would label it clearly in your final submission. 
+
+We now want to see if there is a significant difference between the mean offspring number for the birds on a special diet, with brighter beaks, vs those on a normal diet. This is not normally distributed data so I need to use a non-parametric test
+
+```
+with(dat2, wilcox.test(offspring ~ diet))
+```
+You can then add your output to the code and explain how you would interpret it - and don't forget to put this into a wider context by explaining why you would expect beak brightness to affect female choice.
