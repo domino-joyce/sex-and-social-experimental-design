@@ -1,6 +1,6 @@
 # Experimental design for Sex and Social Behaviour
 
-practical to support experimental design assessment
+practical to support experimental design assessment - work with @jdjgilbert
 
 ----
 **Learning Outcome - sex and social behaviour**
