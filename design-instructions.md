@@ -17,18 +17,38 @@ First, lets check that the diet supplement did indeed have an affect on beak bri
 
 Beak brightness is measured in nm and the mean is about 550 nm, I expect this measurement to have a normal distribution because it is continuous.
 
-'''
+```
 #50 males in normal diet treatment, mean beak wavelength is 550 nm, and the standard deviation is 10 so the points are spread quite far from the mean.
   normal_diet<-rnorm(n=50, mean=550, sd=10)
   normal_diet
 
   special_diet<-rnorm(n=50, mean=560, sd=10)
   special_diet
-'''
+```
 Lets visualise those two data sets we have created by plotting histograms side by side in a panel
 
-'''
+```
 mfrow=c(1, 2)
-hist(normal_diet)
-hist(special_diet)
-'''
+hnorm<-hist(normal_diet)
+hnorm
+hspecial<-hist(special_diet)
+hspecial
+```
+Next we want to turn the variables we have generated for each of the treatments into a dataframe, labelled with the treatment group each male was from.
+
+```
+dat<-data.frame(brightness = c(normal_diet, special_diet), treatment=rep(c('normal','special'), each=50))
+dat #just shows you the data to make sure it looks as you are expecting
+```
+These are normally distributed data, and we now want to test whether there is a difference in mean brightness between the treatments.
+```
+t.test(dat$brightness ~ dat$treatment)
+```
+The output tells us that there is a significant difference in beak brightness between the two groups, so we can be sure that our different diets had a significant effect. In order to visualise this difference, lets make a quick boxplot
+```
+boxplot(dat$brightness ~ dat$treatment)
+```
+When you are producing your own script, make sure you annotate each line of code, and paste in your outputs so that you can explain how you will interpret your results.
+
+
+
