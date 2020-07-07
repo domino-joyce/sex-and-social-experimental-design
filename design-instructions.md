@@ -83,3 +83,7 @@ We now want to see if there is a significant difference between the mean offspri
 with(dat2, wilcox.test(offspring ~ diet))
 ```
 You can then add your output to the code and explain how you would interpret it - and don't forget to put this into a wider context by explaining why you would expect beak brightness to affect female choice.
+
+![image](https://media.giphy.com/media/K5mhAi01uxnos/giphy.gif)
+
+
