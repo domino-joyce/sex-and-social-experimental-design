@@ -2,6 +2,7 @@
 Code by Lesley Morrell
 
 ![image](https://upload.wikimedia.org/wikipedia/commons/0/08/Uca_perplexa_male_waving.gif)
+
 *Uca perplexa* male waving, source: https://commons.wikimedia.org/wiki/File:Uca_perplexa_male_waving.gif
 
 Reaney did a series of 4 choice trials, where females have a choice of a larger or a smaller crab. Each trial has different combinations of crab sizes. She recorded the crab that each of ~20 females chose in each trial. She tested the hypothesis that females prefer the larger of the two crabs, but this depends on both the size difference and the absolute sizes of the two crabs. 
