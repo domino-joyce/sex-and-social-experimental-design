@@ -31,7 +31,7 @@ binom.test(T2large,T2large+T2small,0.5)
 binom.test(T3large,T3large+T3small,0.5)
 binom.test(T4large,T4large+T4small,0.5)
 ```
-#To plot the figure, I need to put all the counts together into a single matrix
+To plot the figure, I need to put all the counts together into a single matrix
 ```
 choice<-matrix(c(18,17,16,13,2,3,4,7),nrow=2,byrow=TRUE,dimnames=list(chosen=c("larger","smaller"),
 	ratio=c("Trial 1","Trial 2", "Trial 3", "Trial 4")))
