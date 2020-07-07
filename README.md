@@ -24,4 +24,4 @@ Read, consider and apply feedback to your work to maximise your understanding
 Demonstrate the ability to collate and explain examples of sexual and social behaviour from the scientific literature, identifying limits in our understanding using critical analysis and synthesis.
 
 ---
-Working through this practical will give you an idea of the type of experimental design expected for your Sex & Social Behaviour assessment, and also provide a source for some useful R code you may wish to adapt in your own design.
+Working through these two examples will give you an idea of the type of experimental design expected for your Sex & Social Behaviour assessment, and also provide a source for some useful R code you may wish to adapt in your own design.
