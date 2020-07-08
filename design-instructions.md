@@ -1,7 +1,7 @@
 # Experimental design - zebra finches
 
-Watch this video to get an idea of the background for this experimental design.
-
+Watch this video to get an idea of the background for this experimental design
+https://www.youtube.com/watch?v=50N7EvuuzGY
 
 We want to design an experiment to test whether beak colour affects mate choice in a bird species. For the purposes of this assessment, we don't need to actually carry out the experiment, so this gives us a bit of freedom. In the assessment, we want to see that you have thought about your design carefully, and know what data you are going to collect, what it will look like, and how you will analyse it. You are going to simulate the data in R, and submit the code to both simulate the data of the type you expect, and subsequently analyse it. We will run this code when we mark your assessment. This is an example of the type of code you might submit.
 
