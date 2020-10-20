@@ -12,15 +12,15 @@ Research, design and plan an investigation into an aspect of sexual or social be
 ----
 **Learning Outcomes - R**
 
-Produce an R script which will generate and analyse a hypothetical dataset  
-Consider the distribution of the data you plan to collect  
-Apply your knowledge by using the code available from previous modules (e.g. Animal Form and Function, Evolutionary Biology, Professional and Research Skills for Biologists).
+Produce an R script which will generate and analyse a hypothetical dataset.  
+Consider the distribution of the data you plan to collect.  
+Apply your knowledge by using the code available from previous modules (e.g. Evolutionary Biology, Professional and Research Skills for Biologists).
 
 
 ----
 **Learning Outcomes - skills**
 
-Read, consider and apply feedback to your work to maximise your understanding  
+Read, consider and apply feedback to your work to maximise your understanding.  
 Demonstrate the ability to collate and explain examples of sexual and social behaviour from the scientific literature, identifying limits in our understanding using critical analysis and synthesis.
 
 ---
