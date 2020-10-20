@@ -5,22 +5,22 @@ practical to support experimental design assessment - work with James Gilbert ht
 ----
 **Learning Outcome - sex and social behaviour**
 
-Show evidence of a broad understanding of sexual and social behaviour, and the inter-relationship between different subjects in the field.
+Show evidence of a broad understanding of sexual and social behaviour, and the inter-relationship between different subjects in the field.  
 Research, design and plan an investigation into an aspect of sexual or social behaviour in the animal kingdom, writing the plan in line with accepted scientific conventions and with reference to current knowledge.
 
 
 ----
 **Learning Outcomes - R**
 
-Produce an R script which will generate and analyse a hypothetical dataset
-Consider the distribution of the data you plan to collect
+Produce an R script which will generate and analyse a hypothetical dataset  
+Consider the distribution of the data you plan to collect  
 Apply your knowledge by using the code available from previous modules (e.g. Animal Form and Function, Evolutionary Biology, Professional and Research Skills for Biologists).
 
 
 ----
 **Learning Outcomes - skills**
 
-Read, consider and apply feedback to your work to maximise your understanding
+Read, consider and apply feedback to your work to maximise your understanding  
 Demonstrate the ability to collate and explain examples of sexual and social behaviour from the scientific literature, identifying limits in our understanding using critical analysis and synthesis.
 
 ---
