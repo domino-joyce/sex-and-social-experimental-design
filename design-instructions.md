@@ -100,10 +100,10 @@ Let's find what the range of beak brightnesses we generated is
 ```
 range(dat$brightness)
 ```
-The range of egg weights divided by the range of beak brightnesses gives is the factor by which to multiply brightness (about 0.008). We can work out the m value in the relationship - the amount of extra weight you get per increase in nm brightness
+The range of egg weights divided by the range of beak brightnesses gives is the factor by which to multiply brightness (about 0.008 but will depend on the random data you generate). We can work out the m value in the relationship - the amount of extra weight you get per increase in nm brightness
 
 ```
-head((dat$brightness-min(dat$brightness)*(0.008)) 
+head((dat$brightness-min(dat$brightness)*(0.008))) 
 ```
 To each, we need to add the minimum egg weight, which is our c value, and we called this 0.8 g
 
